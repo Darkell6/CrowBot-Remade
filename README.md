@@ -42,3 +42,30 @@ Leak by github.com/whoisbaby
 ###### All contributions are accepted, just open an issue / pull request and i will get back to you as soon as i can.
 ###### If you want to help me you can just star the repo and fork it.
  
+# Discord Multi-Bot Starter (conforme aux règles Discord)
+
+Ce projet démarre N bots Discord (discord.js v14) à partir de tokens fournis par vous, et envoie un récapitulatif via un webhook. Aucune création automatique d'apps, reset ou partage de tokens n'est effectuée.
+
+## Prérequis
+- Node.js 18+
+- Créez vos applications/bots sur le Portail Dev Discord et copiez leurs tokens.
+- Activez manuellement les intents nécessaires pour chaque bot dans le Portail Dev.
+
+## Installation
+```bash
+npm i
+cp .env.example .env
+# Editez .env et mettez vos tokens et l'URL du webhook
+```
+
+## Lancement
+```bash
+npm start
+```
+
+Au démarrage, saisissez le nombre de bots à lancer (<= au nombre de tokens saisis). Un embed récap sera envoyé au webhook.
+
+## Sécurité
+- Ne partagez jamais vos tokens.
+- Ce projet ne logge ni n’envoie les tokens.
+ 
