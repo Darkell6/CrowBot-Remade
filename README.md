@@ -1,44 +1,22 @@
-<h1 align="center">
-    CrowBot Remade - It's a multipurpose bot which is a remade of a py discord bot which is selled for 5e but this is in js !
-</h1>
+# discord-multi-bot
 
-<p align="center">
-	CrowBot Remade is in french so you will need to translate the bot.
-</p>
+Ce projet lance plusieurs bots Discord officiels avec discord.js v14.
 
-<p align="center">
-	<a href="https://deno.land" target="_blank">
-    	<img src="https://img.shields.io/badge/Version-1.0.0-7DCDE3?style=for-the-badge" alt="Version">
-</p>
-	
-# INFO
-```
-discord-buttons no longer work!
-use discord-buttons-fixed
-```
+Important: n'utilisez pas de selfbot (interdit par Discord). Utilisez des bots créés dans le portail développeurs.
 
-# Setup
-	
-You can setup `CrowBot Remade` by simply opening your terminal/console and pasting in the following command:
-```
-npm i
-```
-After that go in `config.json` and complete with your token, id etc.
+## Prérequis
+- Node.js 18+
 
-After you've done all that, you can finally run CrowBot Remade by typing in the following command:
-```
-node index.js
-```
-
-
-# Credits
-```
-Made by Wassim
-Leak by github.com/whoisbaby
+## Configuration
+1. Créez vos applications et bots sur le portail développeurs Discord.
+2. Copiez les tokens des bots et renseignez `.env` au format:
 
 ```
+DISCORD_TOKENS=token1,token2,token3
+```
 
-### Contribution;
-###### All contributions are accepted, just open an issue / pull request and i will get back to you as soon as i can.
-###### If you want to help me you can just star the repo and fork it.
- 
+## Lancement
+```
+npm start
+```
+Le script demande combien de bots lancer (1-10), puis connecte ce nombre de clients.
